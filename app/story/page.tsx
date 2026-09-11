@@ -1,2 +1,57 @@
-import Image from 'next/image'; import Link from 'next/link';
-export default function Story(){return <><section className="pageHero"><div className="container"><h1>STORY</h1><p>어푸어푸 프렌즈가 전하는 따뜻한 바다 이야기</p></div></section><section className="section"><div className="container split"><div className="copy"><h2>모두 생명은 사랑스럽습니다</h2><p>깊은 바다 속에는 우리가 아직 만나지 못한 수많은 친구들이 살고 있습니다. 어푸어푸 프렌즈는 그 친구들의 이야기를 쉽고 따뜻하게 전하고 싶었습니다.</p><p>작은 호기심에서 시작해 바다를 더 사랑하고 아끼는 마음으로 이어지도록 다양한 콘텐츠와 굿즈를 통해 즐거운 경험을 만들어갑니다.</p><Link className="btn btnBlue" href="/friends">친구들 만나기</Link></div><Image src="/assets/story-art.png" alt="어푸어푸 스토리" width={700} height={700}/></div><div className="featureList"><div className="feature"><div className="emoji">💗</div><strong>서로 사랑해요</strong></div><div className="feature"><div className="emoji">🐳</div><strong>바다를 아껴요</strong></div><div className="feature"><div className="emoji">⭐</div><strong>다함께 행복해요</strong></div><div className="feature"><div className="emoji">🐚</div><strong>함께 웃어요</strong></div></div></div></section></>}
+import Image from 'next/image';
+import Link from 'next/link';
+export default function Story() {
+  return (
+    <>
+      <section className="pageHero">
+        <div className="container">
+          <h1>STORY</h1>
+          <p>어푸어푸 프렌즈가 전하는 따뜻한 바다 이야기</p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container split">
+          <div className="copy">
+            <h2>모두 생명은 사랑스럽습니다</h2>
+            <p>
+              깊은 바다 속에는 우리가 아직 만나지 못한 수많은 친구들이 살고
+              있습니다. 어푸어푸 프렌즈는 그 친구들의 이야기를 쉽고 따뜻하게
+              전하고 싶었습니다.
+            </p>
+            <p>
+              작은 호기심에서 시작해 바다를 더 사랑하고 아끼는 마음으로
+              이어지도록 다양한 콘텐츠와 굿즈를 통해 즐거운 경험을 만들어갑니다.
+            </p>
+            <Link className="btn btnBlue" href="/friends">
+              친구들 만나기
+            </Link>
+          </div>
+          <Image
+            src="/assets/story-art.png"
+            alt="어푸어푸 스토리"
+            width={700}
+            height={700}
+          />
+        </div>
+        <div className="featureList">
+          <div className="feature">
+            <div className="emoji">💗</div>
+            <strong>서로 사랑해요</strong>
+          </div>
+          <div className="feature">
+            <div className="emoji">🐳</div>
+            <strong>바다를 아껴요</strong>
+          </div>
+          <div className="feature">
+            <div className="emoji">⭐</div>
+            <strong>다함께 행복해요</strong>
+          </div>
+          <div className="feature">
+            <div className="emoji">🐚</div>
+            <strong>함께 웃어요</strong>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
