@@ -4,7 +4,7 @@ import { FriendGrid, ProductGrid } from '@/components/Cards';
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero container">
         <div className="container heroInner">
           <div className="heroCopy">
             <h1>
@@ -26,18 +26,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="heroArt">
-            <Image
-              src="/assets/hero.png"
-              alt="어푸어푸 프렌즈 바다 일러스트"
-              width={900}
-              height={650}
-              priority
-            />
-          </div>
         </div>
       </section>
-      <div className="wave" />
       <section className="section">
         <div className="container">
           <div className="sectionHead">
