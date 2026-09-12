@@ -285,6 +285,7 @@ button {
   margin-top: 28px;
 }
 .feature {
+  width: 150px;
   padding: 22px;
   border-radius: 20px;
   background: #fff;
@@ -364,20 +365,20 @@ button {
   color: #9aafbd;
   margin-top: 10px;
 }
-/* .ocean {
-  background: linear-gradient(180deg, #e2f7ff, #c9efff);
-} */
-.oceanBox {
-  padding: 45px;
-  border-radius: 30px;
-  background: #fff;
-  text-align: center;
-  box-shadow: var(--shadow);
+.ocean > * {
+  display: flex;
+  justify-content: center;
 }
-.oceanBox img {
-  width: min(520px, 100%);
-  margin: 0 auto 20px;
-  border-radius: 25px;
+.oceanBox {
+  background-image: url('/assets/ocean-art.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer {
   position: relative;
@@ -407,15 +408,20 @@ button {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 25rem;
   height: 100%;
   object-fit: scale-down;
+}
+@media (max-width: 900px) {
+  .footerArt {
+    display: none;
+  }
 }
 .footerInner {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 40px 10px 30px 400px;
+  padding: 40px 10px 30px 25rem;
   color: #fff;
   width: 100%;
 }

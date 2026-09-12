@@ -74,16 +74,12 @@ export default function Home() {
         </div>
       </section>
       <section className="section ocean">
-        <div className="container oceanBox">
-          <div className="eyebrow">OCEAN PROJECT</div>
-          <h2>함께 바다를 지켜요</h2>
-          <p>우리의 작은 행동이 바다의 큰 변화를 만듭니다.</p>
-          <Image
-            src="/assets/ocean-art.png"
-            alt="바다 보호 프로젝트"
-            width={700}
-            height={430}
-          />
+        <div className="container">
+          <div className="oceanBox">
+            <div className="eyebrow">OCEAN PROJECT</div>
+            <h2>함께 바다를 지켜요</h2>
+            <p>우리의 작은 행동이 바다의 큰 변화를 만듭니다.</p>
+          </div>
         </div>
       </section>
     </>
