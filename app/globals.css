@@ -282,7 +282,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  margin-top: 28px;
+  margin: 28px auto 0 auto;
 }
 .feature {
   width: 150px;
@@ -365,8 +365,10 @@ button {
   color: #9aafbd;
   margin-top: 10px;
 }
-.ocean > * {
+.ocean {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .oceanBox {
@@ -525,6 +527,9 @@ button {
   .split {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+  .ocean {
+    margin-bottom: 50px;
   }
   .featureList {
     grid-template-columns: repeat(2, 1fr);
