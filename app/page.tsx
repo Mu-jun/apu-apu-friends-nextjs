@@ -79,6 +79,7 @@ export default function Home() {
             <div className="eyebrow">OCEAN PROJECT</div>
             <h2>함께 바다를 지켜요</h2>
             <p>우리의 작은 행동이 바다의 큰 변화를 만듭니다.</p>
+            <div className="oceanBoxImg"></div>
           </div>
         </div>
       </section>

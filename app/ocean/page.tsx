@@ -11,6 +11,7 @@ export default function Ocean() {
               어푸어푸는 바다를 사랑하고 해양 생물을 보호하는 작은 실천을
               응원합니다.
             </h3>
+            <div className="oceanBoxImg"></div>
           </div>
         </div>
       </section>

@@ -370,15 +370,19 @@ button {
   justify-content: center;
 }
 .oceanBox {
-  background-image: url('/assets/ocean-art.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  height: 30rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.oceanBoxImg {
+  background-image: url('/assets/ocean-art.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  max-height: 33vw;
+  height: 610px;
+  width: 100%;
 }
 .footer {
   position: relative;
