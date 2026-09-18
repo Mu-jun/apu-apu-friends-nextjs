@@ -12,43 +12,56 @@ export default function Story() {
       <section className="section">
         <div className="container split">
           <div className="copy">
-            <h2>모두 생명은 사랑스럽습니다</h2>
+            <h2>사람과 사람 사이에</h2>
+            <h2>조금 더 건강한 파도를 만듭니다.</h2>
+            <h3>01. 우리는 어떤 회사인가요?</h3>
+            <strong>어푸풀은 건강한 인간관계를 경험할 수 있는</strong>
+            <br />
+            <strong>콘텐츠와 커뮤니티를 만드는 라이프스타일 기업입니다.</strong>
+
             <p>
-              깊은 바다 속에는 우리가 아직 만나지 못한 수많은 친구들이 살고
-              있습니다. 어푸어푸 프렌즈는 그 친구들의 이야기를 쉽고 따뜻하게
-              전하고 싶었습니다.
+              <br />
             </p>
+            <p>사람을 만나고 싶지만</p>
+            <p>상처받기는 싫고,</p>
+            <br />
+            <p>친해지고 싶지만</p>
+            <p>내 경계를 잃고 싶지는 않고,</p>
+            <br />
+            <p>혼자 있고 싶을 때도 있지만</p>
+            <p>외롭고 싶지는 않은 사람들.</p>
+            <br />
+            <p>어푸풀은 이런 사람들을 위해</p>
             <p>
-              작은 호기심에서 시작해 바다를 더 사랑하고 아끼는 마음으로
-              이어지도록 다양한 콘텐츠와 굿즈를 통해 즐거운 경험을 만들어갑니다.
+              <strong>“나도 편하고, 너도 편한 관계”</strong>를 만들어갑니다.
             </p>
-            <Link className="btn btnBlue" href="/friends">
-              친구들 만나기
-            </Link>
           </div>
           <Image
             src="/assets/story-art.png"
             alt="어푸어푸 스토리"
-            width={700}
-            height={700}
+            width={0}
+            height={0}
+            style={{ width: '100%', height: '100%' }}
           />
         </div>
-        <div className="featureList">
-          <div className="feature">
-            <div className="emoji">💗</div>
-            <strong>서로 사랑해요</strong>
-          </div>
-          <div className="feature">
-            <div className="emoji">🐳</div>
-            <strong>바다를 아껴요</strong>
-          </div>
-          <div className="feature">
-            <div className="emoji">⭐</div>
-            <strong>다함께 행복해요</strong>
-          </div>
-          <div className="feature">
-            <div className="emoji">🐚</div>
-            <strong>함께 웃어요</strong>
+        <div className="container flex-center">
+          <div className="featureList">
+            <div className="feature">
+              <div className="emoji">💗</div>
+              <strong>서로 사랑해요</strong>
+            </div>
+            <div className="feature">
+              <div className="emoji">🐳</div>
+              <strong>바다를 아껴요</strong>
+            </div>
+            <div className="feature">
+              <div className="emoji">⭐</div>
+              <strong>다함께 행복해요</strong>
+            </div>
+            <div className="feature">
+              <div className="emoji">🐚</div>
+              <strong>함께 웃어요</strong>
+            </div>
           </div>
         </div>
       </section>

@@ -276,7 +276,7 @@ button {
 .copy p {
   line-height: 1.9;
   color: #60798c;
-  font-size: 14px;
+  margin: 0;
 }
 .featureList {
   display: grid;
@@ -364,6 +364,11 @@ button {
   font-size: 11px;
   color: #9aafbd;
   margin-top: 10px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ocean {
   display: flex;
