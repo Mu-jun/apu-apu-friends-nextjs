@@ -382,6 +382,12 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.oceanBox h2 {
+  margin: 0;
+}
+.oceanBox h3 {
+  margin: 0;
+}
 .oceanBoxImg {
   background-image: url('/assets/ocean-art.png');
   background-size: contain;
