@@ -34,11 +34,11 @@ export function ProductGrid() {
 export function EventGrid() {
   return (
     <div className="grid grid3">
-      {events.map(([t, d, desc]) => (
+      {events.map(([t, d, desc, src]) => (
         <article className="card" key={t}>
           <Image
             className="eventImg"
-            src="/assets/hero.png"
+            src={src || '/assets/hero.png'}
             alt="어푸어푸 프렌즈"
             width={640}
             height={380}
