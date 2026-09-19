@@ -31,29 +31,13 @@ export default function Ocean() {
 
       <div className="container">
         <div className="ocean">
-          <h2>작은 실천이 만드는 큰 변화</h2>
-          <p>일상에서 실천할 수 있는 작은 행동부터 시작해요.</p>
-          <div className="featureList">
-            <div className="feature">
-              <div className="emoji">♻️</div>
-              <strong>일회용 플라스틱</strong>
-              <strong>줄이기</strong>
-            </div>
-            <div className="feature">
-              <div className="emoji">🌊</div>
-              <strong>바다를 깨끗하게</strong>
-              <strong>해변 쓰레기 줍기</strong>
-            </div>
-            <div className="feature">
-              <div className="emoji">🐠</div>
-              <strong>해양 생명</strong>
-              <strong>존중하기</strong>
-            </div>
-            <div className="feature">
-              <div className="emoji">🤝</div>
-              <strong>함께 실천하기</strong>
-            </div>
-          </div>
+          <h2>우리가 만들고 싶은 관계</h2>
+          <p>나를 잃지 않는 친밀함</p>
+          <p>걸절해도 안전한 관계</p>
+          <p>솔직해도 미움받지 않는 관계</p>
+          <p>혼자 있고 싶을 때 존중받는 관계</p>
+          <p>서로의 다름을 이상하게 생각하지 않는 관계</p>
+          <p>좋아하지만 의존하지 않는 관계</p>
         </div>
       </div>
     </>
