@@ -10,7 +10,6 @@ const items = [
   ['GOODS', '/goods'],
   ['POP-UP', '/popup'],
   ['OCEAN PROJECT', '/ocean'],
-  ['NEWS', '/news'],
 ] as const;
 
 export default function Header() {
