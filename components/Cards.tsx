@@ -15,12 +15,13 @@ export function FriendGrid({ limit }: { limit?: number }) {
     </div>
   );
 }
+
 export function ProductGrid() {
   return (
     <div className="grid grid3">
       {products.map(([n, p, e]) => (
         <article className="card" key={n}>
-          <div className="productImg">{e}</div>
+          <Image className="productImg" src={e} alt={n} width={0} height={0} />
           <div className="cardBody">
             <h3>{n}</h3>
             <div className="price">{p}</div>

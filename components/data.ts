@@ -9,14 +9,14 @@ export const friends = [
   ['assets/friends/song.jpg', '송이', '송이 소개'],
   ['assets/friends/tong.jpg', '통이', '통이 소개'],
 ] as const;
+
 export const products = [
-  ['멍구조개 키링', '8,000원', '🔑'],
-  ['어푸어푸 스티커', '5,000원', '🎟️'],
-  ['복어 봉제인형', '20,000원', '🐡'],
-  ['어푸어푸 엽서', '4,000원', '🖼️'],
-  ['미니 아크릴', '12,000원', '🧸'],
-  ['에코백', '15,000원', '👜'],
+  ['키링', '5,000원', 'assets/goods/keyrings.jpg'],
+  ['어푸어푸 스티커', '3,000원', 'assets/goods/sticker-pack.jpg'],
+  ['키링인형', '10,000원', 'assets/goods/dools.jpg'],
+  ['봉제인형', '15,000원', 'assets/goods/bbok-dools.jpg'],
 ] as const;
+
 export const events = [
   ['도심 속 바다 팝업', '2026.06.01', '도심에서 만나는 작은 바다 이야기'],
   ['어푸어푸 전시', '2026.06.15', '친구들과 함께하는 특별한 전시'],
