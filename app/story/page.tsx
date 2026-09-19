@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 export default function Story() {
   return (
     <>
@@ -14,11 +13,10 @@ export default function Story() {
           <div className="copy">
             <h2>사람과 사람 사이에</h2>
             <h2>조금 더 건강한 파도를 만듭니다.</h2>
-            <h3>01. 우리는 어떤 회사인가요?</h3>
+            <h3>우리는 어떤 회사인가요?</h3>
             <strong>어푸풀은 건강한 인간관계를 경험할 수 있는</strong>
             <br />
             <strong>콘텐츠와 커뮤니티를 만드는 라이프스타일 기업입니다.</strong>
-
             <p>
               <br />
             </p>
@@ -52,7 +50,7 @@ export default function Story() {
             </div>
             <div className="feature">
               <div className="emoji">🐳</div>
-              <strong>바다를 아껴요</strong>
+              <strong>서로 이해해요</strong>
             </div>
             <div className="feature">
               <div className="emoji">⭐</div>
