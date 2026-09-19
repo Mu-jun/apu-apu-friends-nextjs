@@ -323,6 +323,7 @@ button {
   color: #fff;
 }
 .productImg {
+  width: 100%;
   height: 190px;
   background: #eef9ff;
   display: grid;
@@ -589,7 +590,6 @@ button {
     padding: 15px;
   }
   .productImg {
-    width: 100%;
     height: 145px;
     font-size: 58px;
   }
