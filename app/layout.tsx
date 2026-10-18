@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: '어푸어푸 프렌즈',
@@ -18,6 +19,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
