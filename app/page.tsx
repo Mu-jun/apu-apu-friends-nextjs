@@ -35,7 +35,7 @@ export default function Home() {
             <h2>🫧 어푸어푸 프렌즈를 소개합니다 🐚</h2>
             <p>바다에서 만난 개성 넘치는 친구들을 만나보세요.</p>
           </div>
-          <FriendGrid limit={5} />
+          <FriendGrid limit={4} />
           <div style={{ textAlign: 'center', marginTop: 25 }}>
             <Link className="btn btnBlue" href="/friends">
               친구들 더 보기 →
@@ -45,22 +45,21 @@ export default function Home() {
       </section>
       <section className="section" style={{ background: '#eef9ff' }}>
         <div className="container split">
-          <div className="copy">
+          <div className="copy text-center">
             <div className="eyebrow">STORY</div>
-            <h2>모두 생명은 사랑스럽습니다</h2>
-            <p>
-              작고 귀여운 바다 친구들의 이야기를 통해 바다와 생명의 소중함을
-              전합니다.
-            </p>
-            <Link className="btn btnBlue" href="/story">
+            <p>사람과 사람 사이에</p>
+            <p>조금 더 건강한 파도를 만듭니다.</p>
+            <Link className="btn btnBlue mt-3" href="/story">
               STORY 보기
             </Link>
           </div>
           <Image
+            className="storyArt"
+            loading="eager"
             src="/assets/story-art.png"
             alt="바다 친구들"
-            width={600}
-            height={600}
+            width={0}
+            height={0}
           />
         </div>
       </section>
@@ -77,9 +76,18 @@ export default function Home() {
         <div className="container">
           <div className="oceanBox">
             <div className="eyebrow">OCEAN PROJECT</div>
-            <h2>함께 바다를 지켜요</h2>
-            <p>우리의 작은 행동이 바다의 큰 변화를 만듭니다.</p>
-            <div className="oceanBoxImg"></div>
+            <p>관계의 파도 속에서</p>
+            <p>허우적대고, 삐지고, 서운해하고, </p>
+            <p>그래도 다시 서로에게 손을 내미는</p>
+            <p>어푸어프 프렌즈를 만나보세요.</p>
+            <Image
+              className="oceanBoxImg"
+              loading="eager"
+              src="/assets/ocean-art.png"
+              alt="오션 아트"
+              width={0}
+              height={0}
+            />
           </div>
         </div>
       </section>

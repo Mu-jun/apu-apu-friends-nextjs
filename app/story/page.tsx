@@ -35,11 +35,12 @@ export default function Story() {
             </p>
           </div>
           <Image
+            className="storyArt"
+            loading="eager"
             src="/assets/story-art.png"
             alt="어푸어푸 스토리"
             width={0}
             height={0}
-            style={{ width: '100%', height: '100%' }}
           />
         </div>
         <div className="container flex-center">

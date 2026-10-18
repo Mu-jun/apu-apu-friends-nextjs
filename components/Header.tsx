@@ -35,14 +35,14 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="headerActions">
-          {/* <button className="iconBtn" aria-label="검색">
+        {/* <div className="headerActions">
+          <button className="iconBtn" aria-label="검색">
             ⌕
           </button>
           <button className="iconBtn" aria-label="장바구니">
             🛒
-          </button> */}
-        </div>
+          </button>
+        </div> */}
         <button
           className="menuBtn"
           aria-label="메뉴"

@@ -21,7 +21,14 @@ export function ProductGrid() {
     <div className="grid grid3">
       {products.map(([n, p, e]) => (
         <article className="card" key={n}>
-          <Image className="productImg" src={e} alt={n} width={0} height={0} />
+          <Image
+            className="productImg"
+            loading="eager"
+            src={e}
+            alt={n}
+            width={0}
+            height={0}
+          />
           <div className="cardBody">
             <h3>{n}</h3>
             <div className="price">{p}</div>

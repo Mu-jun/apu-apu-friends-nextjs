@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Ocean() {
   return (
     <>
@@ -24,7 +25,14 @@ export default function Ocean() {
             <br />
             <p>그것이 어푸어푸 프렌즈가 생각하는</p>
             <p>건강한 인간관계입니다.</p>
-            <div className="oceanBoxImg"></div>
+            <Image
+              className="oceanBoxImg"
+              loading="eager"
+              src="/assets/ocean-art.png"
+              alt="오션 아트"
+              width={0}
+              height={0}
+            />
           </div>
         </div>
       </section>

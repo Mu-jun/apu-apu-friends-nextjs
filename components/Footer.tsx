@@ -8,8 +8,9 @@ export default function Footer() {
         <Image
           src="/assets/footer-art.png"
           alt="footer art"
-          width={400}
-          height={400}
+          width={0}
+          height={0}
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
       <div className="footerInner">
