@@ -45,11 +45,15 @@ export default function Home() {
       </section>
       <section className="section" style={{ background: '#eef9ff' }}>
         <div className="container split">
-          <div className="copy text-center">
+          <div className="copy" style={{ textAlign: 'center' }}>
             <div className="eyebrow">STORY</div>
             <p>사람과 사람 사이에</p>
             <p>조금 더 건강한 파도를 만듭니다.</p>
-            <Link className="btn btnBlue mt-3" href="/story">
+            <Link
+              className="btn btnBlue"
+              style={{ marginTop: '0.5rem' }}
+              href="/story"
+            >
               STORY 보기
             </Link>
           </div>
