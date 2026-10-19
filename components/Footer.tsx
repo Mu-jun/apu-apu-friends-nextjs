@@ -55,7 +55,7 @@ export default function Footer() {
                 >
                   Instagram
                 </a>
-                <a href="javascript:void(0)">YouTube</a>
+                {/* <a href="javascript:void(0)">YouTube</a> */}
               </div>
             </div>
           </div>
