@@ -77,7 +77,7 @@ export default function Story() {
             </div>
             <div className="feature">
               <div className="emoji">⭐</div>
-              <strong>다함께 행복해요</strong>
+              <strong>다 함께 행복해요</strong>
             </div>
             <div className="feature">
               <div className="emoji">🐚</div>

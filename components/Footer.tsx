@@ -2,12 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
-  const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-  ) => {
-    e.preventDefault();
-    alert('준비중입니다');
-  };
   return (
     <footer className="footer d-flex">
       <div className="footerArt">
@@ -60,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="footerBottom">
-            © APU APU FRIENDS. All rights reserved.
+            © 어푸어푸 프렌즈 APU APU FRIENDS. All rights reserved.
           </div>
         </div>
       </div>

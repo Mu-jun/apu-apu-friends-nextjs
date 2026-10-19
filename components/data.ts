@@ -13,7 +13,7 @@ export const friends = [
 export const products = [
   ['키링', '5,000원', 'assets/goods/keyrings.jpg'],
   ['어푸어푸 스티커', '3,000원', 'assets/goods/sticker-pack.jpg'],
-  ['키링인형', '10,000원', 'assets/goods/dools.jpg'],
+  ['키링 인형', '10,000원', 'assets/goods/dools.jpg'],
   ['봉제인형', '15,000원', 'assets/goods/bbok-dools.jpg'],
 ] as const;
 
@@ -24,8 +24,8 @@ export const events = [
     '도심에서 만나는 작은 바다 이야기',
     'assets/popup/popup.jpg',
   ],
-  ['어푸어푸 전시', '준비중', '친구들과 함께하는 특별한 전시'],
-  ['주말 바다 클래스', '준비중', '아이와 함께 즐기는 바다 체험'],
+  ['어푸어푸 전시', '준비 중', '친구들과 함께하는 특별한 전시'],
+  ['주말 바다 클래스', '준비 중', '아이와 함께 즐기는 바다 체험'],
 ] as const;
 
 export const news = [

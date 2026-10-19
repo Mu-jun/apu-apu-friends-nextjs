@@ -105,7 +105,7 @@ export default function Home() {
             <p>관계의 파도 속에서</p>
             <p>허우적대고, 삐지고, 서운해하고, </p>
             <p>그래도 다시 서로에게 손을 내미는</p>
-            <p>어푸어프 프렌즈를 만나보세요.</p>
+            <p>어푸어푸 프렌즈를 만나보세요.</p>
             <Image
               className="oceanBoxImg"
               loading="eager"
