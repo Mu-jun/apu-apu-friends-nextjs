@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  ) => {
+    e.preventDefault();
+    alert('준비중입니다');
+  };
   return (
     <footer className="footer d-flex">
       <div className="footerArt">
@@ -27,18 +33,18 @@ export default function Footer() {
             <div className="footerNav">
               <div>
                 <h4>ABOUT</h4>
-                <Link href="/story">브랜드 소개</Link>
-                <Link href="/friends">어푸어푸 스토리</Link>
+                <Link href="/friends">프렌즈 소개</Link>
+                <Link href="/story">어푸어푸 스토리</Link>
               </div>
               <div>
                 <h4>CUSTOMER</h4>
-                <Link href="/news">공지사항</Link>
-                <a href="#">FAQ</a>
+                <a href="javascript:void(0)">공지사항</a>
+                <a href="javascript:void(0)">FAQ</a>
               </div>
               <div>
                 <h4>PARTNERSHIP</h4>
-                <a href="#">제휴 문의</a>
-                <a href="#">입점 문의</a>
+                <a href="javascript:void(0)">제휴 문의</a>
+                <a href="javascript:void(0)">입점 문의</a>
               </div>
               <div>
                 <h4>FOLLOW US</h4>

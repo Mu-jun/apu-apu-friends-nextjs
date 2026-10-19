@@ -1,4 +1,26 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: '브랜드 스토리 | 어푸어푸 프렌즈',
+  description:
+    '나도 편하고 너도 편한 관계를 만듭니다. 건강한 인간관계를 경험할 수 있는 콘텐츠와 커뮤니티 라이프스타일 기업, 어푸어푸 프렌즈의 이야기입니다.',
+  alternates: { canonical: '/story' },
+  openGraph: {
+    title: '브랜드 스토리 | 어푸어푸 프렌즈',
+    description: '나도 편하고 너도 편한 관계를 만듭니다.',
+    url: '/story',
+    images: [
+      {
+        url: '/assets/story-art.png',
+        width: 1200,
+        height: 630,
+        alt: '어푸어푸 프렌즈 브랜드 스토리',
+      },
+    ],
+  },
+};
+
 export default function Story() {
   return (
     <>

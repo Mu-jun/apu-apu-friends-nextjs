@@ -1,6 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FriendGrid, ProductGrid } from '@/components/Cards';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '어푸어푸 프렌즈 | 바다에서 만난 사랑스러운 친구들',
+  description:
+    '건강한 관계를 위한 콘텐츠와 커뮤니티, 어푸어푸 프렌즈. 개성 넘치는 바다 친구들의 이야기와 굿즈, 팝업 소식을 만나보세요.',
+  openGraph: {
+    title: '어푸어푸 프렌즈 | 바다에서 만난 사랑스러운 친구들',
+    description:
+      '건강한 관계를 위한 콘텐츠와 커뮤니티, 어푸어푸 프렌즈. 개성 넘치는 바다 친구들의 이야기와 굿즈, 팝업 소식을 만나보세요.',
+    url: '/',
+    images: [
+      {
+        url: '/assets/hero.png',
+        width: 1200,
+        height: 630,
+        alt: '어푸어푸 프렌즈',
+      },
+    ],
+  },
+};
+
 export default function Home() {
   return (
     <>

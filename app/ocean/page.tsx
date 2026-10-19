@@ -1,4 +1,27 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '오션 프로젝트: 나만의 파도 | 어푸어푸 프렌즈',
+  description:
+    '내 파도를 알고 상대의 파도를 존중하는 것. 나를 잃지 않는 친밀함, 거절해도 안전한 관계. 어푸어푸 프렌즈가 그리는 건강한 관계를 소개합니다.',
+  alternates: { canonical: '/ocean' },
+  openGraph: {
+    title: '오션 프로젝트: 나만의 파도 | 어푸어푸 프렌즈',
+    description:
+      '내 파도를 알고 상대의 파도를 존중하는 것. 나를 잃지 않는 친밀함, 거절해도 안전한 관계. 어푸어푸 프렌즈가 그리는 건강한 관계를 소개합니다.',
+    url: '/ocean',
+    images: [
+      {
+        url: '/assets/hero.png',
+        width: 1200,
+        height: 630,
+        alt: '어푸어푸 프렌즈',
+      },
+    ],
+  },
+};
+
 export default function Ocean() {
   return (
     <>
@@ -41,7 +64,7 @@ export default function Ocean() {
         <div className="ocean">
           <h2>우리가 만들고 싶은 관계</h2>
           <p>나를 잃지 않는 친밀함</p>
-          <p>걸절해도 안전한 관계</p>
+          <p>거절해도 안전한 관계</p>
           <p>솔직해도 미움받지 않는 관계</p>
           <p>혼자 있고 싶을 때 존중받는 관계</p>
           <p>서로의 다름을 이상하게 생각하지 않는 관계</p>

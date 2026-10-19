@@ -5,8 +5,13 @@ import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
-  title: '어푸어푸 프렌즈',
-  description: '깊은 바다에서 만난 가장 사랑스러운 친구들',
+  metadataBase: new URL('https://apu-apu-friends.vercel.app'),
+  openGraph: {
+    siteName: '어푸어푸 프렌즈',
+    locale: 'ko_KR',
+    type: 'website',
+  },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function RootLayout({
