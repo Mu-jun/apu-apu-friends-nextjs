@@ -23,20 +23,27 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko" data-scroll-behavior="smooth">
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-C39MX8VT4Y"
-      ></script>
-      <script>
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <head>
+        <meta
+          name="naver-site-verification"
+          content="14a091651d2cecc8feae5d5882338150be3c4298"
+        />
 
-        gtag('config', 'G-C39MX8VT4Y');
-      `}
-      </script>
-      <GoogleTagManager gtmId="GTM-TQJKD8TG" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-C39MX8VT4Y"
+        ></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-C39MX8VT4Y');
+        `}
+        </script>
+        <GoogleTagManager gtmId="GTM-TQJKD8TG" />
+      </head>
       <body>
         <Header />
         <main>{children}</main>
