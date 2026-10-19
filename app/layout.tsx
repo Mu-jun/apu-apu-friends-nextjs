@@ -20,6 +20,19 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko" data-scroll-behavior="smooth">
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-C39MX8VT4Y"
+      ></script>
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-C39MX8VT4Y');
+        `}
+      </script>
       <GoogleTagManager gtmId="GTM-TQJKD8TG" />
       <body>
         <Header />
