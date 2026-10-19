@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/next';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://apu-apu-friends.vercel.app'),
@@ -19,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ko" data-scroll-behavior="smooth">
+      <GoogleTagManager gtmId="GTM-TQJKD8TG" />
       <body>
         <Header />
         <main>{children}</main>
