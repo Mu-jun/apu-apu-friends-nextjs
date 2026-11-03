@@ -149,7 +149,7 @@ button {
 .btn:hover {
   background: var(--deep);
   color: #fff;
-  border: #fff 1px solid;
+  /* border: #fff 1px solid; */
 }
 .btnBlue {
   background: var(--blue);
