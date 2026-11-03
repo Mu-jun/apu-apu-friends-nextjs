@@ -1,7 +1,20 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import ReadyAlertModal from './Ready-Alert-Modal';
 
 export default function Footer() {
+  const [isReadyAlertOpen, setIsReadyAlertOpen] = useState(false);
+  const readyAlert = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsReadyAlertOpen(true);
+  };
+  const onCloseReadyAlert = () => {
+    setIsReadyAlertOpen(false);
+  };
   return (
     <footer className="footer d-flex">
       <div className="footerArt">
@@ -30,15 +43,28 @@ export default function Footer() {
                 <Link href="/friends">프렌즈 소개</Link>
                 <Link href="/story">어푸어푸 스토리</Link>
               </div>
+              {isReadyAlertOpen &&
+                createPortal(
+                  <ReadyAlertModal onClose={onCloseReadyAlert} />,
+                  document.body,
+                )}
               <div>
                 <h4>CUSTOMER</h4>
-                <a href="javascript:void(0)">공지사항</a>
-                <a href="javascript:void(0)">FAQ</a>
+                <Link href="#" onClick={readyAlert}>
+                  공지사항
+                </Link>
+                <Link href="#" onClick={readyAlert}>
+                  FAQ
+                </Link>
               </div>
               <div>
                 <h4>PARTNERSHIP</h4>
-                <a href="javascript:void(0)">제휴 문의</a>
-                <a href="javascript:void(0)">입점 문의</a>
+                <Link href="#" onClick={readyAlert}>
+                  제휴 문의
+                </Link>
+                <Link href="#" onClick={readyAlert}>
+                  입점 문의
+                </Link>
               </div>
               <div>
                 <h4>FOLLOW US</h4>
